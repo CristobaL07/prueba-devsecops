@@ -1,0 +1,4 @@
+name: Mi Primera Pipeline
+on:
+  push:
+    branches: [main]
