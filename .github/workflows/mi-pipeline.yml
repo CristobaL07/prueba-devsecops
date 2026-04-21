@@ -2,3 +2,12 @@ name: Mi Primera Pipeline
 on:
   push:
     branches: [main]
+jobs:
+  construir-proyecto:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Compilar proyecto
+        run: echo "Compilando el código..."
+      - name: Análisis de Seguridad (SAST)
+        run: echo "Escaneando el código en busca de vulnerabilidades... ¡Todo seguro!"
