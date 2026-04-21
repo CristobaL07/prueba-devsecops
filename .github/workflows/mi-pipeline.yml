@@ -2,6 +2,8 @@ name: Pipeline JavaScript
 on:
   push:
     branches: [main]
+env:
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
 jobs:
   testear-codigo:
     runs-on: ubuntu-latest
